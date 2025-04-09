@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- Gerado com o chatGPT com o prompt: 'Crie para mim um site bonito e rápido para o meu grupo de robótica estudantil.
+  O site deve ter um menu com as seções: "Sobre",  "A equipe", "Vídeos", "Fotos", "Guias", "Modalidades".
+  A seção modalidade deve ter uma subseção "Rescue Maze" e "Rescue Maze simulado".
+  Se possível o site todo deve ficar armazenado em um único arquivo de fácil edição.' -->
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupo de Robótica Estudantil</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #1e293b;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #334155;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #1e293b;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+
+    .subsection {
+      margin-top: 2rem;
+      padding-left: 1rem;
+      border-left: 4px solid #94a3b8;
+    }
+
+    .team-member {
+      margin: 1rem 0;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 0.5rem;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#equipe">A equipe</a>
+      <a href="#videos">Vídeos</a>
+      <a href="#fotos">Fotos</a>
+      <a href="#guias">Guias</a>
+      <a href="#modalidades">Modalidades</a>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <p>Somos um grupo de robótica estudantil apaixonado por tecnologia, inovação e desafios. Participamos de competições regionais e nacionais em diversas modalidades de robótica educacional.</p>
+  </section>
+
+  <section id="equipe">
+    <h2>A equipe</h2>
+    <div class="team-member">João - Programador</div>
+    <div class="team-member">Maria - Eletrônica</div>
+    <div class="team-member">Pedro - Construção do robô</div>
+    <div class="team-member">Ana - Documentação e testes</div>
+  </section>
+
+  <section id="videos">
+    <h2>Vídeos</h2>
+    <p>Confira alguns dos nossos vídeos:</p>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=exemplo1" target="_blank">Apresentação do robô</a></li>
+      <li><a href="https://www.youtube.com/watch?v=exemplo2" target="_blank">Teste no labirinto</a></li>
+    </ul>
+  </section>
+
+  <section id="fotos">
+    <h2>Fotos</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200?text=Equipe+1" alt="Foto 1">
+      <img src="https://via.placeholder.com/300x200?text=Robô+em+ação" alt="Foto 2">
+      <img src="https://via.placeholder.com/300x200?text=Competição" alt="Foto 3">
+    </div>
+  </section>
+
+  <section id="guias">
+    <h2>Guias</h2>
+    <p>Aqui você pode acessar os nossos tutoriais e materiais de estudo:</p>
+    <ul>
+      <li><a href="https://exemplo.com/guia-programacao.pdf" target="_blank">Guia de Programação</a></li>
+      <li><a href="https://exemplo.com/guia-montagem.pdf" target="_blank">Guia de Montagem</a></li>
+    </ul>
+  </section>
+
+  <section id="modalidades">
+    <h2>Modalidades</h2>
+    <div class="subsection" id="rescue-maze">
+      <h3>Rescue Maze</h3>
+      <p>Modalidade voltada para o resgate de vítimas em um labirinto. Nosso robô precisa identificar cores, contornar obstáculos e encontrar o caminho mais eficiente.</p>
+    </div>
+    <div class="subsection" id="rescue-maze-simulado">
+      <h3>Rescue Maze Simulado</h3>
+      <p>Simulação da prova Rescue Maze usando ambientes virtuais, ideal para testes de lógica e navegação autônoma.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Grupo de Robótica Estudantil. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
